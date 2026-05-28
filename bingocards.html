@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+<script 
+2
+  src="https://www.paypal.com/sdk/js?client-id=BAAx-M-MGLJrtjk7vC10eziTmNpkGx-xx5yQkDP1xtfDGxDuCsz9O2FvDbiOY7dcSDZqaimwGVU_UEr_SY&components=hosted-buttons&enable-funding=venmo&currency=USD">
+3
+</script>
+    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -116,16 +123,18 @@ Includes additional printable bingo cards for larger groups and more replay valu
 
 <p class="price">$5.00</p>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_xclick">
-<input type="hidden" name="business" value="YOUR-PAYPAL-EMAIL-HERE">
-<input type="hidden" name="item_name" value="Kitchen Spanish Bingo Cards Volume 1">
-<input type="hidden" name="amount" value="5.00">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="return" value="https://davidjohnphotography.com/Volume%201.pdf">
 
-<input class="button" type="submit" value="Buy Volume 1">
-</form>
+<div id="paypal-container-RC9TTBTUUVRUY"></div>
+
+<script>
+
+  paypal.HostedButtons({
+
+    hostedButtonId: "RC9TTBTUUVRUY",
+
+  }).render("#paypal-container-RC9TTBTUUVRUY")
+
+</script>
 </div>
 
 <div class="card-box">
