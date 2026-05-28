@@ -146,16 +146,17 @@ Another printable expansion pack with more card variety for repeat play.
 
 <p class="price">$5.00</p>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_xclick">
-<input type="hidden" name="business" value="YOUR-PAYPAL-EMAIL-HERE">
-<input type="hidden" name="item_name" value="Kitchen Spanish Bingo Cards Volume 2">
-<input type="hidden" name="amount" value="5.00">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="return" value="https://davidjohnphotography.com/Volume%202.pdf">
+<div id="paypal-container-R8G6T2XCEYC9L"></div>
 
-<input class="button" type="submit" value="Buy Volume 2">
-</form>
+<script>
+
+  paypal.HostedButtons({
+
+    hostedButtonId: "R8G6T2XCEYC9L",
+
+  }).render("#paypal-container-R8G6T2XCEYC9L")
+
+</script>
 </div>
 
 <h2>Why Printable Packs?</h2>
