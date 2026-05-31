@@ -3,10 +3,9 @@
 <head>
     
 <script 
-2
   src="https://www.paypal.com/sdk/js?client-id=BAAx-M-MGLJrtjk7vC10eziTmNpkGx-xx5yQkDP1xtfDGxDuCsz9O2FvDbiOY7dcSDZqaimwGVU_UEr_SY&components=hosted-buttons&enable-funding=venmo&currency=USD">
-3
 </script>
+   
     
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -124,9 +123,15 @@ Includes additional printable bingo cards for larger groups and more replay valu
 <p class="price">$5.00</p>
 
 
-<div id="paypal-container-RC9TTBTUUVRUY"></div>
 
+<div id="paypal-container-RC9TTBTUUVRUY"></div>
 <script>
+  paypal.HostedButtons({
+    hostedButtonId: "RC9TTBTUUVRUY",
+  }).render("#paypal-container-RC9TTBTUUVRUY")
+</script>
+    
+    <script>
 
   paypal.HostedButtons({
 
@@ -146,8 +151,13 @@ Another printable expansion pack with more card variety for repeat play.
 
 <p class="price">$5.00</p>
 
-<div id="paypal-container-R8G6T2XCEYC9L"></div>
 
+<div id="paypal-container-R8G6T2XCEYC9L"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "R8G6T2XCEYC9L",
+  }).render("#paypal-container-R8G6T2XCEYC9L")
+</script>
 <script>
 
   paypal.HostedButtons({
