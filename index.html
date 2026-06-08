@@ -169,68 +169,34 @@ margin:12px;
 
     <p> 2026 David John Creations. All Rights Reserved.</p>
 </footer>
-<script>
 
-const images = [
-      "The Adventures of Madame Blavatsky and the Guru from Nibiru Book Cover.PNG"
-
-    "Kitchen Spanish ad.png",
-
-    "Batch.png",
-
-    "Days Inn view from Skyhouse.jpeg",
-
-    "Kitchen Spanish Playing Cards.png",
-
-    "Kitchen Spanish ad.png"
- "Sunrise at Texas City Dike 1200.jpg"
-     "New Brighton State Beach 1200 .jpg"
-     "San Luis Reservoir 1200.jpg"
-   
-     "We Love Houston Sunset 1200.jpg"
-     "tshirts.png"
-];
-
-const randomIndex = Math.floor(Math.random() * images.length);
-
-
-<script>
+ <script>
 
 const images = [
 
   "The Adventures of Madame Blavatsky and the Guru from Nibiru Book Cover.PNG",
-
   "Kitchen Spanish ad.png",
-
   "Beach.png",
-
   "Days Inn view from Skyhouse.jpeg",
-
   "Kitchen Spanish Playing Cards.png",
-
-  "Kitchen Spanish ad.png",
-
   "Sunrise at Texas City Dike 1200.jpg",
-
   "New Brighton State Beach 1200.jpg",
-
   "San Luis Reservoir 1200.jpg",
-
-  "We Love Houston Sunset 1200.jpg"
+  "We Love Houston Sunset 1200.jpg",
+  "tshirts.png"
 
 ];
 
-window.onload = function() {
+window.addEventListener("load", function() {
 
   const randomIndex = Math.floor(Math.random() * images.length);
 
-  document.getElementById("randomImage").setAttribute("src", images[randomIndex]);
+  document.getElementById("randomImage").src = images[randomIndex];
 
-};
-
-</script>
+});
 
 </script>
-    
+Also make sure all of those image files:
+
 </body>
 </html>
