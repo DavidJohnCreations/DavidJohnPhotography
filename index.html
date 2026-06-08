@@ -141,8 +141,13 @@ margin:12px;
 
 <div class="gallery">
 
-    <img src="david author photo.PNG">
+   <img id="randomImage"
 
+     src="images/magritte1.jpg"
+
+     alt="Featured Image"
+
+     style="max-width:100%; border-radius:10px;">
    
 
 </div>
@@ -164,7 +169,27 @@ margin:12px;
 
     <p> 2026 David John Creations. All Rights Reserved.</p>
 </footer>
+<script>
 
+const images = [
+
+    "images/magritte1.jpg",
+
+    "images/magritte2.jpg",
+
+    "images/magritte3.jpg",
+
+    "images/magritte4.jpg",
+
+    "images/magritte5.jpg"
+
+];
+
+const randomIndex = Math.floor(Math.random() * images.length);
+
+document.getElementById("randomImage").src = images[randomIndex];
+
+</script>
     
 </body>
 </html>
